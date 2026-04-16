@@ -16,7 +16,7 @@ public class databaseController {
             Statement tryStatement=con.createStatement();
             ResultSet rs=tryStatement.executeQuery("SELECT * FROM USERS");
 
-            try {
+            /*try {
                 while (rs.next()) {
                     System.out.println(
                             rs.getInt("userID") + " - " +
@@ -25,7 +25,7 @@ public class databaseController {
                 }
             }catch (Exception e){
                 System.out.println("hata");
-            }
+            }*///test için kalsın burda tekrar yazma bi daha
 
 
             rs.close();
